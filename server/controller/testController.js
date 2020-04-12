@@ -14,6 +14,7 @@ testcontroller.test = async (req, res) => {
 testcontroller.store = async (req, res) => {
     try {
         var { name } = req.body
+        console.log(name)
         const testdata = new Testmodel({
             name
         })
@@ -21,6 +22,7 @@ testcontroller.store = async (req, res) => {
         var result = await testdata.save()
         res.status(200).json({message:"ok"})
     } catch (error) {
+        console.log(error)
         res.status(400).json({error:error})
     }
 }
