@@ -13,9 +13,9 @@ databaseConfig.connection = {
     }
 }
 
-var db = `mongodb://${databaseConfig.connection.mongodb.host}:${databaseConfig.connection.mongodb.port}/${databaseConfig.connection.mongodb.database}`
+// var db = `mongodb://${databaseConfig.connection.mongodb.host}:${databaseConfig.connection.mongodb.port}/${databaseConfig.connection.mongodb.database}`
 
-// var db ='mongodb+srv://admin:admin@sleepfreetime-5kc2c.gcp.mongodb.net/learn?retryWrites=true&w=majority'
+var db ='mongodb+srv://admin:admin@sleepfreetime-5kc2c.gcp.mongodb.net/learn?retryWrites=true&w=majority'
 databaseConfig.getConnection = {
     mongodb: db
 }

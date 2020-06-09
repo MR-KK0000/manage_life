@@ -1,17 +1,17 @@
 <template>
-  <v-app>
+  <div id="app">
     <router-view></router-view>
-  </v-app>
+  </div>
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld';
 
 export default {
-  name: 'App',
+  name: "App",
 
   data: () => ({
     //
-  }),
+  })
 };
 </script>
